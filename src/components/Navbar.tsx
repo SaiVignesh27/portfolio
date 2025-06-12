@@ -33,7 +33,7 @@ const Navbar = () => {
           
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              {['About', 'Projects', 'Blog', 'Certifications', 'Contact'].map((item) => (
+              {['About', 'Projects', 'Certifications', 'Contact'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollTo(item.toLowerCase())}
