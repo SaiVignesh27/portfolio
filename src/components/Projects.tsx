@@ -5,36 +5,40 @@ import { ExternalLink, Github, Code2 } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
-    {
-      id: 'skill-troove',
-      title: 'SKILL TROOVE',
-      description: 'A web/mobile app for connecting freelancers and recruiters, featuring AI-driven matchmaking and location-based recommendations.',
-      image: freelance,
-      status: 'Final Year Project (Ongoing)',
-      technologies: ['React Native', 'Node.js', 'MongoDB', 'AI/ML']
-    },
-    {
-      id: 'trip-amity',
-      title: 'TRIP AMITY',
-      description: 'A mobile application designed to assist in itinerary planning for trips.',
-      image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80',
-      technologies: ['React Native', 'Firebase', 'Google Maps API']
-    },
-    {
-      id: 'ts-hub',
-      title: 'TS-HUB',
-      description: 'A web application to help students access educational materials provided by faculty members.',
-      image: ts,
-      technologies: ['MERN Stack', 'AWS S3', 'Material UI']
-    },
-    {
-      id: 'school-bus',
-      title: 'SCHOOL BUS MANAGEMENT SYSTEM',
-      description: 'An IoT solution for school buses that provides real-time location updates and child commute details for parents, along with fee reports for management.',
-      image: 'https://images.unsplash.com/photo-1557223562-6c77ef16210f?auto=format&fit=crop&q=80',
-      technologies: ['IoT', 'React.js', 'Node.js', 'MongoDB']
-    }
-  ];
+  {
+    id: 'skill-troove',
+    title: 'SkillTroove – AI-Powered Freelance Marketplace',
+    description:
+      'Developed a secure and scalable freelance hiring platform with AI-based talent matching and blockchain-enabled transactions, supporting contract management, user profiles, and trusted payment flows.',
+    image: freelance,
+    status: 'Final Year Project',
+    technologies: ['React.js', 'Node.js', 'MongoDB', 'Python', 'Blockchain']
+  },
+  {
+    id: 'java-tracker',
+    title: 'Java Learning Tracker',
+    description:
+      'Created a full-stack web app for tracking learning progress in Java courses, featuring user authentication, note-taking, and progress visualization to support structured self-learning.',
+    image: 'https://images.unsplash.com/photo-1581092580345-22ec3c203f6c?auto=format&fit=crop&q=80',
+    technologies: ['React.js', 'MongoDB', 'Express.js', 'Firebase Auth']
+  },
+  {
+    id: 'ts-hub',
+    title: 'TS-Hub – Faculty-Student Resource Sharing',
+    description:
+      'A full-stack platform connecting faculty and students for academic discussions and educational material sharing.',
+    image: ts,
+    technologies: ['MERN Stack', 'AWS S3', 'Material UI']
+  },
+  {
+    id: 'diabetes-detector',
+    title: 'Diabetes Detection System',
+    description:
+      'Built a machine learning system using Pima Indians Diabetes Dataset, focusing on data preprocessing, model training, and healthcare insights using supervised learning.',
+    image: 'https://images.unsplash.com/photo-1603911221999-41f6df3d6d5e?auto=format&fit=crop&q=80',
+    technologies: ['Python', 'AI/ML', 'Pandas', 'Scikit-learn']
+  }
+];
 
   const navigateToProject = (id: string) => {
     window.location.href = `/project/${id}`;
@@ -50,7 +54,7 @@ const Projects = () => {
             <div
               key={index}
               className="backdrop-blur-lg bg-white bg-opacity-5 rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300 cursor-pointer"
-              onClick={() => navigateToProject(project.id)}
+{/*               onClick={() => navigateToProject(project.id)} */}
             >
               <div className="relative h-48">
                 <img
@@ -58,9 +62,9 @@ const Projects = () => {
                   alt={project.title}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+{/*                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                   <span className="text-white font-medium">View Details</span>
-                </div>
+                </div> */}
               </div>
               
               <div className="p-6">
