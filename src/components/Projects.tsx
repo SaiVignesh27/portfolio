@@ -1,6 +1,8 @@
 import React from 'react';
 import freelance from './freelance.png';
 import ts from './tshub.png';
+import java from './java.jpg';
+import dia from './diabetes.jpg';
 import { ExternalLink, Github, Code2 } from 'lucide-react';
 
 const Projects = () => {
@@ -19,7 +21,7 @@ const Projects = () => {
     title: 'Java Learning Tracker',
     description:
       'Created a full-stack web app for tracking learning progress in Java courses, featuring user authentication, note-taking, and progress visualization to support structured self-learning.',
-    image: 'https://images.unsplash.com/photo-1581092580345-22ec3c203f6c?auto=format&fit=crop&q=80',
+    image: java,
     technologies: ['React.js', 'MongoDB', 'Express.js', 'Firebase Auth']
   },
   {
@@ -35,7 +37,7 @@ const Projects = () => {
     title: 'Diabetes Detection System',
     description:
       'Built a machine learning system using Pima Indians Diabetes Dataset, focusing on data preprocessing, model training, and healthcare insights using supervised learning.',
-    image: 'https://images.unsplash.com/photo-1603911221999-41f6df3d6d5e?auto=format&fit=crop&q=80',
+    image: dia,
     technologies: ['Python', 'AI/ML', 'Pandas', 'Scikit-learn']
   }
 ];
