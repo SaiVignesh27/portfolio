@@ -104,7 +104,7 @@ const About = () => {
                 <li>Salesforce Certified Platform Developer 1</li>
                 <li>Finalist in MEAN Stack Hackathon</li>
                 <li>Finalist in JAVA Full Stack Hackathon</li>
-                <li>Currently working on a project to develop LMS for <a href="https://faangtechlab.com" target="_blank" style="color: #007BFF; font-weight: bold;">Faangtechlab.com</a> as an Internship</li>
+                <li>Currently working on a project to develop LMS for <a href="https://faangtechlab.com" target="_blank">Faangtechlab.com</a> as an Internship</li>
               </ul>
             </div>
 
